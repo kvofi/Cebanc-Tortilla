@@ -12,7 +12,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textSize="24sp"
         android:layout_marginBottom="20dp"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="10dp" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -21,22 +21,38 @@
         android:layout_marginBottom="10dp"
         >
 
-        <CheckBox
+        <TextView
             android:text="@string/cola"
-            android:layout_width="226dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="3.64"
-            android:id="@+id/checkBox1" />
+            android:id="@+id/textView10"
+            android:layout_weight="4.79"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp" />
 
-        <EditText
-            android:gravity="end"
-            android:layout_width="160dp"
+        <TextView
+            android:text="@string/nada"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="number"
-            android:ems="10"
-            android:id="@+id/editText5"
-            android:hint="@string/cant"
-             />
+            android:id="@+id/textViewCola"
+            android:layout_weight="13.11"
+            android:gravity="right"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <Button
+            android:text="@string/menos"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMenosCola" />
+
+        <Button
+            android:text="@string/mas"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMasCola" />
 
     </LinearLayout>
 
@@ -44,126 +60,218 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp">
+        android:layout_marginBottom="10dp"
+        >
 
-        <CheckBox
+        <TextView
             android:text="@string/limon"
-            android:layout_width="226dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/checkBox4"
-            android:layout_weight="3.64" />
+            android:id="@+id/textView11"
+            android:layout_weight="4.79"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp" />
 
-        <EditText
-            android:gravity="end"
-            android:layout_width="160dp"
+        <TextView
+            android:text="@string/nada"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="number"
-            android:ems="10"
-            android:id="@+id/editText7"
-            android:hint="@string/cant"
-            />
+            android:id="@+id/textViewLimon"
+            android:layout_weight="13.11"
+            android:gravity="right"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <Button
+            android:text="@string/menos"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMenosLimon" />
+
+        <Button
+            android:text="@string/mas"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMasLimon"/>
+
     </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp">
+        android:layout_marginBottom="10dp"
+        >
 
-        <CheckBox
+        <TextView
             android:text="@string/naranja"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/checkBox5"
-            android:layout_weight="3.64" />
+            android:id="@+id/textView12"
+            android:layout_weight="4.79"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp" />
 
-        <EditText
-            android:gravity="end"
-            android:layout_width="160dp"
+        <TextView
+            android:text="@string/nada"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="number"
-            android:ems="10"
-            android:id="@+id/editText10"
-            android:hint="@string/cant"
-            />
+            android:id="@+id/textViewNaranja"
+            android:layout_weight="13.11"
+            android:gravity="right"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <Button
+            android:text="@string/menos"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMenosNaranja" />
+
+        <Button
+            android:text="@string/mas"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMasNaranja" />
+
     </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp">
+        android:layout_marginBottom="10dp"
+        >
 
-        <CheckBox
+        <TextView
             android:text="@string/nestea"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/checkBox6"
-            android:layout_weight="3.64" />
+            android:id="@+id/textView13"
+            android:layout_weight="4.79"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp" />
 
-        <EditText
-            android:layout_width="160dp"
-            android:gravity="end"
+        <TextView
+            android:text="@string/nada"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="number"
-            android:ems="10"
-            android:id="@+id/editText11"
-            android:hint="@string/cant"
-            />
+            android:id="@+id/textViewNestea"
+            android:layout_weight="13.11"
+            android:gravity="right"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <Button
+            android:text="@string/menos"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMenosNestea" />
+
+        <Button
+            android:text="@string/mas"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMasNestea" />
+
     </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp">
+        android:layout_marginBottom="10dp"
+        >
 
-        <CheckBox
+        <TextView
             android:text="@string/cerveza"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/checkBox7"
-            android:layout_weight="3.64" />
+            android:id="@+id/textView14"
+            android:layout_weight="4.79"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp" />
 
-        <EditText
-            android:layout_width="160dp"
+        <TextView
+            android:text="@string/nada"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="number"
-            android:ems="10"
-            android:gravity="end"
-            android:id="@+id/editText8"
-            android:hint="@string/cant"
-            />
+            android:id="@+id/textViewCerveza"
+            android:layout_weight="13.11"
+            android:gravity="right"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <Button
+            android:text="@string/menos"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMenosCerveza" />
+
+        <Button
+            android:text="@string/mas"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMasCerveza" />
+
     </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp">
+        android:layout_marginBottom="10dp"
+        >
 
-        <CheckBox
+        <TextView
             android:text="@string/agua"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/checkBox9"
-            android:layout_weight="3.31" />
+            android:id="@+id/textView3"
+            android:layout_weight="4.79"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp" />
 
-        <EditText
+        <TextView
+            android:text="@string/nada"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="number"
-            android:ems="10"
-            android:id="@+id/editText6"
-            android:hint="@string/cant"
-            android:layout_width="160dp"
-            android:gravity="end" />
+            android:id="@+id/textViewAgua"
+            android:layout_weight="13.11"
+            android:gravity="right"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <Button
+            android:text="@string/menos"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMenosAgua" />
+
+        <Button
+            android:text="@string/mas"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMasAgua" />
+
     </LinearLayout>
+
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="91dp"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="1dp">
 
         <Button
             android:text="@string/exit"

@@ -19,6 +19,8 @@
             android:label="@string/app_name"/>
         <activity android:name=".TortillasActivity"
             android:label="@string/app_name"/>
+        <activity android:name=".TotalActivity"
+            android:label="@string/app_name"/>
     </application>
 
 </manifest>

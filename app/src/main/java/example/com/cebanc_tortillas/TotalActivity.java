@@ -10,10 +10,15 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
 
 
 public class TotalActivity extends AppCompatActivity {
-    String[] datos;
+    String[] personas;
+    ArrayList<String> tortillas;
+    ArrayList<String> bebidas;
+    double totalTortillas;
+    double totalBebidas;
 
 
     @Override
@@ -22,7 +27,11 @@ public class TotalActivity extends AppCompatActivity {
         setContentView(R.layout.activity_total);
 
         Bundle extras = getIntent().getExtras();
-        datos = extras.getStringArray("datos");
+        personas = extras.getStringArray("datos1");
+        tortillas= extras.getStringArrayList("datos2");
+        bebidas= extras.getStringArrayList("datos3");
+        totalTortillas= extras.getDouble("totalTortillas");
+        totalBebidas= extras.getDouble("totalBebidas");
 
 
 
