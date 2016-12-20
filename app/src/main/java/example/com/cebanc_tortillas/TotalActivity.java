@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-//
+
 public class TotalActivity extends AppCompatActivity {
     String[] personas;
     ArrayList<String> tortillas;
