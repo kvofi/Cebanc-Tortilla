@@ -19,6 +19,10 @@ public class TotalActivity extends AppCompatActivity {
     ArrayList<String> bebidas;
     double totalTortillas;
     double totalBebidas;
+    Button bSalir;
+    Button bSiguiente;
+    TextView nombre;
+
 
 
     @Override
@@ -32,6 +36,21 @@ public class TotalActivity extends AppCompatActivity {
         bebidas= extras.getStringArrayList("datos3");
         totalTortillas= extras.getDouble("totalTortillas");
         totalBebidas= extras.getDouble("totalBebidas");
+        bSalir=(Button) findViewById(R.id.button10);
+        bSiguiente=(Button) findViewById(R.id.button11);
+        nombre= (TextView) findViewById(R.id.textView4) ;
+        nombre.setText(personas[0]+","+personas[1]);
+        bSalir.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                finish();
+            }
+        });
+        bSiguiente.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Toast toast1 =Toast.makeText(getApplicationContext(),totalBebidas+"/"+totalTortillas, Toast.LENGTH_SHORT);
+                toast1.show();
+            }
+        });
 
 
 

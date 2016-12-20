@@ -21,6 +21,8 @@ public class TortillasActivity extends AppCompatActivity {
     double preciotipo;
     Double suma=0.0;
     Double total=0.0;
+    Double precio;
+
     int cant;
 
     String[] datos;
@@ -71,7 +73,7 @@ public class TortillasActivity extends AppCompatActivity {
                     //2 x Tortilla de patata individual, huevos de granja (10.40€)
                     total=calcularTotal();
                     suma+=total;
-                    String todo=(cant+" x Tortilla de "+tipotortilla+" "+tamaño+", huevos "+huevo+"-"+total+"€");
+                    String todo=(cant+" x Tortilla de "+tipotortilla+" "+tamaño+", huevos "+huevo+"-"+precio+"€");
                     Toast toast1 =Toast.makeText(getApplicationContext(),todo, Toast.LENGTH_SHORT);
                     toast1.show();
                     list.add(todo);
@@ -159,6 +161,8 @@ public class TortillasActivity extends AppCompatActivity {
             huevo="ecologicos";
         }
         devolver+=preciotipo;
+
+        precio=devolver;
 
         devolver*=cant;
         return devolver;

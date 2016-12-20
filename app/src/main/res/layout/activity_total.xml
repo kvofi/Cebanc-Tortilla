@@ -3,4 +3,34 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:layout_marginTop="1dp">
+
+        <Button
+            android:text="@string/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/button10"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_weight="0.36"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored" />
+
+        <Button
+            android:text="@string/siguiente"
+            android:layout_width="wrap_content"
+            android:layout_height="96dp"
+            android:id="@+id/button11"
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_weight="0.36"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored" />
+
+    </LinearLayout>
 </LinearLayout>

@@ -39,7 +39,7 @@ public class BebidasActivity extends AppCompatActivity {
 
     String[] datos;
     ArrayList<String> list;
-    ArrayList<String> list2;
+    ArrayList<String> list2= new ArrayList<String>();
 
     double totalTortillas=0.0;
     double totalBebidas=0.0;
@@ -54,7 +54,7 @@ public class BebidasActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         datos = extras.getStringArray("datos1");
         list = extras.getStringArrayList("datos2");
-        totalTortillas= extras.getDouble("total");
+        totalTortillas= extras.getDouble("totalTortillas");
 
 
         bMenosCola=(Button) findViewById(R.id.btnMenosCola);
@@ -162,41 +162,40 @@ public class BebidasActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public double rellenarArray(){
-        double total=0.0;
-        String frase;
+        double cant=0.0;
+
         if(Integer.parseInt(textViewCola.getText().toString())>0){
-            int cantidad = Integer.parseInt(textViewCola.getText().toString());
-            total = cantidad *1.95;
-            frase=cantidad+"x Bebida de cola - 1.95€";
-            list2.add(frase);
+            cant =+(Double.parseDouble(textViewCola.getText().toString()) *1.95);
+            list2.add(Integer.parseInt(textViewCola.getText().toString())+"x Bebida de cola - 1.95€");
+
         }
 
         if(Integer.parseInt(textViewLimon.getText().toString())>0){
-            total = Integer.parseInt(textViewLimon.getText().toString()) *1.90;
+            cant += Integer.parseInt(textViewLimon.getText().toString()) *1.90;
             list2.add(Integer.parseInt(textViewLimon.getText().toString())+"x Bebida de limon - 1.90€");
         }
 
         if(Integer.parseInt(textViewNaranja.getText().toString())>0){
-            total = Double.parseDouble(textViewNaranja.getText().toString()) *1.90;
+            cant += Double.parseDouble(textViewNaranja.getText().toString()) *1.90;
             list2.add(Double.parseDouble(textViewNaranja.getText().toString())+"x Bebida de naranja - 1.90€");
         }
 
         if(Integer.parseInt(textViewNestea.getText().toString())>0){
-            total = Integer.parseInt(textViewNestea.getText().toString()) *1.50;
+            cant += Integer.parseInt(textViewNestea.getText().toString()) *1.50;
             list2.add(Integer.parseInt(textViewNestea.getText().toString())+"x Bebida de nestea - 1.50€");
         }
 
         if(Integer.parseInt(textViewCerveza.getText().toString())>0){
-            total = Integer.parseInt(textViewCerveza.getText().toString()) *1.65;
+            cant += Integer.parseInt(textViewCerveza.getText().toString()) *1.65;
             list2.add(Integer.parseInt(textViewCerveza.getText().toString())+"x Bebida de cerveza - 1.65€");
         }
 
         if(Integer.parseInt(textViewAgua.getText().toString())>0){
-            total = Integer.parseInt(textViewAgua.getText().toString()) *1.00;
+            cant += Integer.parseInt(textViewAgua.getText().toString()) *1.00;
             list2.add(Integer.parseInt(textViewAgua.getText().toString())+"x Bebida de agua - 1.00€");
         }
+        return cant;
 
-    return total;
     }
 
     public void calcular(boolean sumar,  TextView text){
