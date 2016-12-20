@@ -22,7 +22,7 @@ public class TotalActivity extends AppCompatActivity {
     Button bSalir;
     Button bSiguiente;
     TextView nombre;
-    //
+
 
 
 
